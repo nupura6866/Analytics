@@ -1,5 +1,8 @@
 
 ```{r}
+## Nupura   
 library(sqldf)
 library(RCurl)
+
+this_directory <- getwd()
 ```
