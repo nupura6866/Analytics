@@ -1,0 +1,34 @@
+## Initialize
+```{r}
+library(readxl)
+
+
+
+
+
+```
+## Read Data 
+```{r}
+
+test <- read.csv("C:/Users/NSAWLE/OneDrive - The University of Melbourne/Desktop/R/test.csv")
+View(test)
+train <-  read.csv("C:/Users/NSAWLE/OneDrive - The University of Melbourne/Desktop/R/train.csv")
+View(train)
+
+train$set <- "train"
+test$set <- "set"
+
+test$Survived <- NA
+data <- rbind(train,test) 
+
+
+
+```
+## Inspect data
+```{r}
+summary(data)
+```
+
+
+
+
